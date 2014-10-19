@@ -41,7 +41,9 @@ namespace ExportTable
 
             if (createFullPage)
             {
-                writer.Write(@"<!doctype html><html><head><title>{0}</title></head><body>", HttpUtility.HtmlEncode(Table.Title));
+                writer.Write(@"<!doctype html><html><head><title>");
+                writer.Write(HttpUtility.HtmlEncode(Table.Title));
+                writer.Write(@"</title></head><body>");
             }
 
             writer.Write("<table>");
