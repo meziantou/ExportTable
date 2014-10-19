@@ -40,10 +40,10 @@ Export Table
 **Bounded / Unbounded Columns**
 
     customers.ToTable(showHeader: true)
+        // Bounded
         .AddColumn(customer => customer.Id, title: "Identifier")
+        // Unbounded
         .AddColumns(title: "Full Name", select: customer => customer.FirstName + " " + customer.LastName)
-        .AddColumn(customer => customer.DateOfBirth, format: "mm/yyyy")
-        .GenerateSpreadsheet("customers.xlsx")
 
 **Others**
 
