@@ -22,11 +22,6 @@ Export Table
         .GenerateHtmlTable()                 // return string
         .GenerateHtmlTable(textWriter)       // write to stream
 
-
-    Console.WriteLine(customers.ToTable(showHeader: true)
-        .AddColumn(customer => customer.Id)
-        .GenerateHtmlTable())
-
 **Export to CSV**
 
     customers.ToTable(showHeader: true)
