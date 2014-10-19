@@ -396,7 +396,7 @@ namespace ExportTable
                 case TypeCode.Decimal:
                     return CellValues.Number;
                 case TypeCode.DateTime:
-                    return CellValues.Date; // TODO review;
+                    return CellValues.Date;
                 case TypeCode.Char:
                 case TypeCode.String:
                     return CellValues.InlineString;

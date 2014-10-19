@@ -19,7 +19,7 @@ namespace ExportTable
             return table;
         }
 
-        public static Table<T> AddColumns<T>(
+        public static Table<T> AddColumn<T>(
             this Table<T> table,
             string title = null,
             Type dataType = null,
@@ -30,10 +30,10 @@ namespace ExportTable
             CultureInfo culture = null,
             Func<T, object> select = null)
         {
-            return AddColumns<T, object>(table, null, title, dataType, format, convertEmptyStringToNull, encodeValue, nullDisplayText, culture, select);
+            return AddColumn<T, object>(table, null, title, dataType, format, convertEmptyStringToNull, encodeValue, nullDisplayText, culture, select);
         }
 
-        public static Table<T> AddColumns<T, TValue>(
+        public static Table<T> AddColumn<T, TValue>(
             this Table<T> table,
             Expression<Func<T, TValue>> expression = null,
             string title = null,
