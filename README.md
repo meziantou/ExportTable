@@ -42,7 +42,7 @@ Export Table
 
 **Others**
 
-Bounded columns automatically find display information such as column title, format from DataAnnotations :
+Bounded columns automatically find display information such as column title or format from DataAnnotations :
 
     public class Customer
     {
