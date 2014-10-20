@@ -38,7 +38,7 @@ Export Table
         // Bounded
         .AddColumn(customer => customer.Id, title: "Identifier")
         // Unbounded
-        .AddColumns(title: "Full Name", select: customer => customer.FirstName + " " + customer.LastName)
+        .AddColumn(title: "Full Name", select: customer => customer.FirstName + " " + customer.LastName)
 
 **Others**
 
