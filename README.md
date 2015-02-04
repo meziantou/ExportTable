@@ -60,4 +60,4 @@ Bounded columns automatically find display information such as column title or f
 **Dependencies**
 
 - [OpenXml 2.5 SDK](https://www.nuget.org/packages/DocumentFormat.OpenXml/)
-- [CodeFluent Runtime Client](http://www.softfluent.com/products/codefluent-runtime-client)
+- [CodeFluent Runtime Client](http://www.softfluent.com/products/codefluent-runtime-client) (or CodeFluent.Runtime)
